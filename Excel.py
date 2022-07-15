@@ -44,7 +44,7 @@ def ProductSearch(key, with_sim=False):
                 for word2 in word2ls:
                     word2 = word2.capitalize()
                     if word1 == word2[:len(word1)]:
-                        res_sim += str(sheet["A" + str(i)].value) + ' - ' + str(sheet["E" + str(i)].value) + ' ккал \n'
+                        res_sim += str(sheet[LETTER_COLUMN_PRODUCT + str(i)].value) + ' - ' + str(sheet[LETTER_COLUMN_KCAL + str(i)].value) + ' ккал \n'
                         mark = True
                         break
                 if mark:
