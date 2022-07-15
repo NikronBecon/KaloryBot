@@ -24,7 +24,7 @@ async def stop(message: aiogram.types.Message, state: FSMContext):
 
 
 async def kalory_1(message: aiogram.types.Message):
-    await message.answer("Введите название продукта, а я посмотрю, есть ли он у меня в базе :)")
+    await message.answer("Введите название продукта, а я посмотрю, есть ли он у меня в базе.")
     await State.StateKalory.St1.set()
 
 
