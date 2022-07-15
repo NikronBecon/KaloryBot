@@ -31,7 +31,7 @@ async def kalory_1(message: aiogram.types.Message):
 async def kalory_2(message: aiogram.types.Message, state: FSMContext):
     text = message.text
     res = Excel.ProductSearch(text)
-    if res == "Ничего похожего не нашлось(":
+    if res == "n":
         await message.answer("Такого продукта у нас нет!")
         await kalory_1(message)
     else:

@@ -58,5 +58,5 @@ def ProductSearch(key, with_sim=False):
         if res:
             return res
         else:
-            return "Ничего похожего не нашлось("
+            return "n"
 
